@@ -1,0 +1,29 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/auth.log
+      - /var/log/syslog
+    fields:
+      host_type: kali
+      environment: homelab
+
+  - type: filestream
+    enabled: true
+    id: auditd-logs
+    paths:
+      - /var/log/audit/audit.log
+    fields:
+      host_type: kali
+      log_type: auditd
+
+output.elasticsearch:
+  hosts: ["https://homelab-siem-63f39e.es.asia-southeast2.gcp.elastic-cloud.com:443"]
+  username: "elastic"
+  password: "REDACTED"
+  ssl.enabled: true
+
+setup.kibana:
+  host: "https://homelab-siem-63f39e.kb.asia-southeast2.gcp.elastic-cloud.com:443"
+
+logging.level: info
