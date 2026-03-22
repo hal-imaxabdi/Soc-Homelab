@@ -98,7 +98,7 @@ Both VMs → Elastic Cloud (GCP Jakarta)
 ![First Alert](screenshots/11-first-alert-fired.png)
 
 ### Alert Investigation Panel
-![Alert Detail](screenshots/15-alert-investigation-panel.png)
+![Alert Detail](screenshots/14-65-alerts-both-hosts.png)
 
 
 ## References
