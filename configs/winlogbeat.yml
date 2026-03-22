@@ -1,0 +1,25 @@
+winlogbeat.event_logs:
+  - name: Application
+    ignore_older: 72h
+  - name: System
+    ignore_older: 72h
+  - name: Security
+    ignore_older: 72h
+  - name: Microsoft-Windows-Sysmon/Operational
+    ignore_older: 72h
+  - name: Microsoft-Windows-PowerShell/Operational
+    ignore_older: 72h
+
+output.elasticsearch:
+  hosts: ["https://homelab-siem-63f39e.es.asia-southeast2.gcp.elastic-cloud.com:443"]
+  username: "elastic"
+  password: "REDACTED"
+  ssl.enabled: true
+
+setup.kibana:
+  host: "https://homelab-siem-63f39e.kb.asia-southeast2.gcp.elastic-cloud.com:443"
+
+logging.level: info
+logging.to_files: true
+logging.files:
+  path: C:/ProgramData/winlogbeat/Logs
