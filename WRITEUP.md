@@ -313,3 +313,4 @@ of running whoami and systeminfo on the compromised Windows VM.
 - [Auditd Rules Reference](https://linux.die.net/man/8/auditctl)
 - [Winlogbeat Reference](https://www.elastic.co/guide/en/beats/winlogbeat/current/index.html)
 ```
+# Note: Elasticsearch endpoint and credentials have been redacted/deployment deleted after 14days
