@@ -82,6 +82,24 @@ Both VMs → Elastic Cloud (GCP Jakarta)
 
 ## Screenshots
 
+### Alerts Dashboard — 65 alerts detected across both hosts
+![Alerts Dashboard](screenshots/01-kibana-65-alerts.png)
+
+### Windows Logs — Winlogbeat ingesting Sysmon events
+![Windows Logs](screenshots/02-winlogbeat-discover-118-docs.png)
+
+### Kali Logs — Filebeat ingesting auditd events  
+![Kali Logs](screenshots/03-filebeat-discover-45k-docs.png)
+
+### 1740 Detection Rules Installed
+![Detection Rules](screenshots/05-1740-rules-installed.png)
+
+### First Alert — Suspicious Recon Commands on Windows
+![First Alert](screenshots/11-first-alert-fired.png)
+
+### Alert Investigation Panel
+![Alert Detail](screenshots/15-alert-investigation-panel.png)
+
 
 ## References
 - [Elastic SIEM Documentation](https://www.elastic.co/guide/en/security/current/index.html)
