@@ -10,7 +10,7 @@ custom detection rules.
 ## Environment
 | Component | Details |
 |---|---|
-| Host OS | Windows (your host machine) |
+| Host OS | Windows 11 |
 | Hypervisor | VirtualBox |
 | VM 1 | Windows 10 |
 | VM 2 | Kali Linux |
